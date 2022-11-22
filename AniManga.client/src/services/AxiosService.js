@@ -6,6 +6,6 @@ export const api = Axios.create({
 })
 
 export const animeApi = Axios.create({
-  baseURL: "https://animes3.p.rapidapi.com/",
+  baseURL: "https://anime-db.p.rapidapi.com/anime",
   timeout: 8000
 })
