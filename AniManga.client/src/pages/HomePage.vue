@@ -14,8 +14,24 @@
 </template>
 
 <script>
+import { logger } from '../utils/Logger.js';
+import Pop from '../utils/Pop.js';
+import { animeService } from '../services/AnimeService.js'
+import { onMounted } from 'vue';
+
 export default {
   setup() {
+    async function getAnime(){
+      try {
+      await animeService.getAnime()
+      } catch (error) {
+      logger.error(error)
+      Pop.error(error, "error")
+      }
+    }
+    onMounted(()=>{
+      getAnime()
+    })
     return {}
   }
 }
