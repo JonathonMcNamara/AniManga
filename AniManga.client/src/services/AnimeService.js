@@ -1,3 +1,4 @@
+import { AppState } from "../AppState.js"
 import { animeApi } from "./AxiosService.js"
 
 class AnimeService{
@@ -6,7 +7,8 @@ class AnimeService{
         page: 1,
         size: 20
     }})
-    console.log(res.data)
+    AppState.anime = res.data.data
+    console.log(AppState.anime)
     }
 }
 
