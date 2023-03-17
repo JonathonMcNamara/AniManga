@@ -2,9 +2,11 @@
 
 <div class="event-card card-img-top my-2 elevation-2 rounded selectable">
     <div>
-        <img class="img-fluid rounded-top" :src="anime?.image" alt="">
+        <div>
+            <img class="img-fluid rounded-top" :src="anime?.image" alt="">
+        </div>
     </div>
-    <div class="card-body">
+    <div>
         {{anime?.title}}
     </div>
 </div>
