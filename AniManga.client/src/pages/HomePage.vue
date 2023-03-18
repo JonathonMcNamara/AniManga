@@ -6,6 +6,11 @@
       <AnimeCard :anime="a"/>
     </div>
   </div>
+  <div class="row">
+    <div class="col-3">
+      <button>Load More</button>
+    </div>
+  </div>
 </div>
 
 
