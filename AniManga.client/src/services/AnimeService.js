@@ -10,7 +10,13 @@ class AnimeService{
     AppState.anime = res.data.data
     console.log(AppState.anime)
     }
-}
+    async getMoreAnime(){
+        
+    }
+
+
+    }
+    
 
 export const animeService = new AnimeService()
 
