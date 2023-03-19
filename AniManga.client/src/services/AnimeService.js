@@ -11,7 +11,8 @@ class AnimeService{
     console.log(AppState.anime)
     }
     async getMoreAnime(){
-        
+    const res = await this.getAnime()
+
     }
 
 
